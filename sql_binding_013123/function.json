@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "sql",
+      "direction": "in",
+      "name": "dpdb",
+      "commandText": "SELECT * FROM Power_App_PD_Board.pd_board_people_barometer",
+      "commandType": "Text",
+      "connectionStringSetting": "opex_dpdb"
+      
+    }
+  ]
+}
